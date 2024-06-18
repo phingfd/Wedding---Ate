@@ -814,12 +814,6 @@ form label {
   font-weight: normal !important;
 }
 
-@media (max-width: 767px) {
-  #fh5co-header {
-      background-attachment: scroll;
-  }
-}
-
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
 .fh5co-cover .display-tc {
