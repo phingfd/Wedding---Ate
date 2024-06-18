@@ -516,33 +516,29 @@
 	<script src="js/main.js"></script>
 
 	<script>
-        $(document).ready(function() {
-            // Set the target date to July 18, 2024, at 2 PM
-            var targetDate = new Date(2024, 6, 18, 14, 0, 0); // Months are 0-indexed, so 6 represents July
+  // Set the target date to July 18, 2024, at 2 PM
+var targetDate = new Date(2024, 6, 18, 14, 0, 0); // Months are 0-indexed, so 6 represents July
 
-            // Default example
-            simplyCountdown('.simply-countdown-one', {
-                year: targetDate.getFullYear(),
-                month: targetDate.getMonth(), // 6 for July
-                day: targetDate.getDate(),
-                hours: targetDate.getHours(),
-                minutes: targetDate.getMinutes()
-            });
+// default example
+simplyCountdown('.simply-countdown-one', {
+    year: targetDate.getFullYear(),
+    month: targetDate.getMonth() + 1, // Correct for 0-indexed month
+    day: targetDate.getDate(),
+    hours: targetDate.getHours(),
+    minutes: targetDate.getMinutes()
+});
 
-            // jQuery example
-            $('#simply-countdown-losange').simplyCountdown({
-                year: targetDate.getFullYear(),
-                month: targetDate.getMonth(), // 6 for July
-                day: targetDate.getDate(),
-                hours: targetDate.getHours(),
-                minutes: targetDate.getMinutes(),
-                enableUtc: false
-            });
-        });
-    </script>
+// jQuery example
+$('#simply-countdown-losange').simplyCountdown({
+    year: targetDate.getFullYear(),
+    month: targetDate.getMonth() + 1, // Correct for 0-indexed month
+    day: targetDate.getDate(),
+    hours: targetDate.getHours(),
+    minutes: targetDate.getMinutes(),
+    enableUtc: false
+});
 
-</script>
-
+	</script>
 	
 	<script>
         // Function to save date to Google Calendar
