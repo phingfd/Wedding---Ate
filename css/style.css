@@ -317,9 +317,38 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
+    height: 340px;
+  }
+}
+
+/* cover1 */
+.fh5co-cover1 {
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+}
+.fh5co-cover1 .overlay {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.fh5co-cover1 > .fh5co-container {
+  position: relative;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover1 {
     height: 600px;
   }
 }
+/* conver1 */
+
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
   height: 900px;
@@ -329,9 +358,11 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
-    height: 600px;
+    height: 400px;
   }
 }
+
+/* comment */
 .fh5co-cover.fh5co-cover-sm {
   height: 600px;
 }
@@ -352,6 +383,41 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 400px;
   }
 }
+
+/* cover1 */
+.fh5co-cover1 .display-t,
+.fh5co-cover1 .display-tc {
+  height: 900px;
+  display: table;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover1 .display-t,
+  .fh5co-cover1 .display-tc {
+    height: 600px;
+  }
+}
+.fh5co-cover1.fh5co-cover-sm {
+  height: 600px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover1.fh5co-cover-sm {
+    height: 400px;
+  }
+}
+.fh5co-cover1.fh5co-cover-sm .display-t,
+.fh5co-cover1.fh5co-cover-sm .display-tc {
+  height: 600px;
+  display: table;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover1.fh5co-cover-sm .display-t,
+  .fh5co-cover1.fh5co-cover-sm .display-tc {
+    height: 400px;
+  }
+}
+/* cover1 */
 
 #fh5co-counter,
 #fh5co-event {
@@ -856,7 +922,7 @@ form label {
 .fh5co-cover .display-tc h2 {
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h2,
@@ -925,14 +991,14 @@ form label {
 
 .simply-countdown {
   /* The countdown */
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background: rgba(241, 78, 149, 0.8);
   margin: 0 4px;
   -webkit-border-radius: 50%;
@@ -958,8 +1024,8 @@ form label {
   /* countdown block inner div */
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .simply-countdown > .simply-section .simply-amount,
@@ -977,7 +1043,7 @@ form label {
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   /* words */
 }
 
