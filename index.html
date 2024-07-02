@@ -486,7 +486,7 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeWr7-cyzYrjSl9Nf3LVlfcyXZTd3QCgeDWaq_7qBntS-rtUA/formResponse" method="POST" target="_blank" id="rsvpForm">
+					<form class="form-inline" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeWr7-cyzYrjSl9Nf3LVlfcyXZTd3QCgeDWaq_7qBntS-rtUA/formResponse" method="POST" id="rsvpForm">
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="name" class="sr-only">Full name</label>
@@ -502,8 +502,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block"
-							>Submit response</button>
+							<button type="submit" class="btn btn-default btn-block" onclick="submitForm()">Submit response</button>
 						</div>
 					</form>
 				</div>
@@ -559,6 +558,16 @@ simplyCountdown('.simply-countdown-one', {
 });
 
 	</script>
+	<script>
+		function submitForm() {
+			var form = document.getElementById('rsvpForm');
+			form.submit();
+			setTimeout(function() {
+				location.reload();
+			}, 1000); // Adjust the delay if necessary
+		}
+	</script>
+	
 	<script>
         // Function to save date to Google Calendar
         function saveDateToGoogleCalendar(date) {
